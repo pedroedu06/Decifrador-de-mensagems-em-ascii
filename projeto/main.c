@@ -20,7 +20,7 @@ int main(){
     printf("quantas mensagens foram captadas?: ");
     scanf("%lf", &b);
     getchar();
-    printf("insira a mensagem codificada(limite maximo 50 caracteres): ");
+    printf("insira a mensagem codificada(limite maximo 50 caracteres cada mensagem): ");
     fgets(mensagem, sizeof(mensagem), stdin);
     
     mensagem[strcspn(mensagem, "\n")] = 0;
