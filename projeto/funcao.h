@@ -6,13 +6,4 @@ double fxb(int x, double b);
 
 
 
-
-
-
-
-
-
-
-
-
 #endif
