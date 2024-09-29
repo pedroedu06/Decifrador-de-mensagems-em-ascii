@@ -19,9 +19,3 @@ double fxb(int x, double b){
     
     }
 
-
-int decimal(char high, char low) {
-    char hex[3] = {high, low, '\0'};
-    return (int)strtol(hex, NULL, 16);
-}
-

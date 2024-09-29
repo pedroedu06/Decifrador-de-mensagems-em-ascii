@@ -5,6 +5,12 @@
 #include "funcao.h"
 
 
+    
+int decimal(char high, char low) {
+    char hex[3] = {high, low, '\0'};
+    return (int)strtol(hex, NULL, 16); //codigo que coverte hexadecimal para decimal//
+}
+
 int main(){
     
     int x = 1;
@@ -27,13 +33,13 @@ int main(){
      while(i < strlen(mensagem) - 1){
     
         if(!((mensagem[i] >= '0' && mensagem[i] <= '9') || (mensagem[i] >= 'A' && mensagem[i] <= 'F') || (mensagem[i] >= 'a' && mensagem[i] <= 'f'))){
-            printf("caracteres invalidos");
+            printf("caracteres invalidos"); //valor que verifica cada caracter para hexadecimal na mensagem
             break;
         }
 
         int valorDecimal = decimal(mensagem[i], mensagem[i + 1]);
 
-        printf("valor do decimal: %d\n", valorDecimal);
+
         if (valorDecimal == 0){
             break;
         }

@@ -4,7 +4,7 @@
 
 double fxb(int x, double b);
 
-int decimal(char high, char low);
+
 
 
 

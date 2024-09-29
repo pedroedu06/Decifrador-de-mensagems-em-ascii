@@ -20,7 +20,7 @@ double fxb(int x, double b){
 
 int decimal(char high, char low) {
     char hex[3] = {high, low, '\0'};
-    return (int)strtol(hex, NULL, 16);
+    return (int)strtol(hex, NULL, 16); //codigo que coverte hexadecimal para decimal//
 }
 
 int main (){
@@ -48,7 +48,7 @@ int main (){
     while(i < strlen(mensagem) ){
     
         if(!((mensagem[i] >= '0' && mensagem[i] <= '9') || (mensagem[i] >= 'A' && mensagem[i] <= 'F') || (mensagem[i] >= 'a' && mensagem[i] <= 'f'))){
-            printf("caracteres invalidos");
+            printf("caracteres invalidos"); //valor que verifica cada caracter para hexadecimal na mensagem
             break;
         }
 
