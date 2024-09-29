@@ -15,10 +15,11 @@ double fxb(int x, double b){
     double a7 = -4.22038e-7;
 
     double resultado = a0 + (a1 + b)* x + a2 * pow(x, 2) + a3 * pow(x, 3) + a4 * pow(x, 4) + a5 * pow(x, 5) + a6 * pow(x, 6) + a7 * pow(x, 7);
+    round(resultado);
     return resultado; 
 }
 
-int decimal(char high, char low) {
+int conversorDecimal(char high, char low) {
     char hex[3] = {high, low, '\0'};
     return (int)strtol(hex, NULL, 16); //codigo que coverte hexadecimal para decimal//
 }
@@ -52,7 +53,7 @@ int main (){
             break;
         }
 
-        int valorDecimal = decimal(mensagem[i], mensagem[i + 1]);
+        int valorDecimal = conversorDecimal(mensagem[i], mensagem[i + 1]);
 
         if (valorDecimal == 0){
             break;

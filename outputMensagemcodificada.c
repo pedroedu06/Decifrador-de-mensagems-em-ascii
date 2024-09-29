@@ -3,6 +3,8 @@
 #include<math.h>
 #include<string.h>
 
+//esse codigo foi para testes!
+
 double fxb(int x, double b){
 
     double a0 = 186752;
